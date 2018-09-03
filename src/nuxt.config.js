@@ -16,7 +16,10 @@ module.exports = {
   css: [
     { src: "@/assets/styles/main.css", lang: "css" }
   ],
+  buildDir: "../prod/server/nuxt",
   build: {
+    publicPath: "/assets/",
+    extractCSS: true,
     /*
     ** Run ESLint on save
     */
